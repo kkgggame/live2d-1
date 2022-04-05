@@ -27,7 +27,6 @@ function loadExternalResource(url, type) {
 }
 
 // 加载 waifu.css live2d.min.js waifu-tips.js
-if (screen.width >= 768) {
 	Promise.all([
 		loadExternalResource(live2d_path + "waifu.min.css", "css"),
 		loadExternalResource(live2d_path + "live2d.min.js", "js"),
@@ -36,12 +35,9 @@ if (screen.width >= 768) {
 		initWidget({
 			waifuPath: tips_path + "waifu-tips.json",
 			//apiPath: "https://cdn.jsdelivr.net/gh/kkgggame/live2d-1@latest/live2d/",
-			cdnPath: "https://cdn.jsdelivr.net/gh/kkgggame/live2d-1@latest/live2d/"
+			cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 		});
 	});
-}
-
-
 console.log(`
   く__,.ヘヽ.        /  ,ー､ 〉
            ＼ ', !-─‐-i  /  /´
