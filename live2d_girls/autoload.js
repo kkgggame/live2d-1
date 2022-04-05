@@ -1,5 +1,5 @@
 // 注意：live2d_path 参数应使用绝对路径，记得修改哦
-const live2d_path = "/live2d_girls/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/kkgggame/live2d-1@v1.0.0/";
 const tips_path = "/live2d_girls/";
 //const live2d_path = "";
 //const live2d_path = "/live2d-widget/";
@@ -34,8 +34,8 @@ function loadExternalResource(url, type) {
 	]).then(() => {
 		initWidget({
 			waifuPath: tips_path + "waifu-tips.json",
-			apiPath: "/live2d/",
-			//cdnPath: "https://你的对象存储域名/live2d/"
+			//apiPath: "/live2d/",
+			cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 		});
 	});
 console.log(`
